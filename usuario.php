@@ -1,23 +1,18 @@
 <?php
 
 class Usuario{
-    private $id;
     private $nombre;
     private $email;
     private $clave;
     private $foto;
 
-    function Usuario($id, $nombre, $email, $clave, $foto){
-        $this->id = $id;
+    function Usuario($nombre, $email, $clave, $foto){
         $this->nombre = $nombre;
         $this->email = $email;
         $this->clave = $clave;
         $this->foto = $foto;
     }
 
-    function getId(){
-        return $this->id;
-    }
     function getNombre(){
         return $this->nombre;
     }
